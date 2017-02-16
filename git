@@ -1,0 +1,101 @@
+全局
+git config --global user.name 'your name'
+git config --global user.email 'your email'
+
+git ignore file
+touch .gitignore
+
+检查忽略文件
+git check-ignore -v file
+
+单个仓库
+git config user.name 'your name'
+git config user.email 'your email'
+
+密钥
+ssh-keygen -t rsa -C 'your email'
+
+仓库初始化
+git init
+
+提交文件到缓存区
+git add file
+
+提交文件到仓库
+git commit file
+
+回退到上一版本
+git reset --hard HEAD^
+
+回退到number
+git reset --hard HEAD~number
+
+回退到version
+git reset --hard version
+
+清除缓存区状态
+git reset HEAD file
+
+删除缓存区文件
+git rm --cached file
+
+查看提交version
+git reflog
+
+查看仓库状态
+git status
+
+查看操作日志
+git log --pretty=oneline
+
+恢复到缓存区或仓库状态
+git checkout -- file
+
+比较现有文件与缓存区文件的区别
+git diff file
+
+添加远程仓库地址
+git remote add origin url
+git remote add <name> <url>
+git remote rename <oldName> <newName>
+git remote remove <name>
+
+将本地代码推给远程仓库
+git push origin master
+git push <name> <branch>
+
+创建分支
+git branch <name>
+git branch -d <name>
+
+切换分支
+git checkout <name>
+
+创建并切换分支
+git checkout -b <name>
+
+合并分支到当前分支
+git merge dev
+
+禁用fast forward
+git merge --no-ff <branch>
+
+保存工作现场
+git stash
+列出工作状态
+git stash list
+恢复
+git stash apply
+恢复删除stash状态
+git stash pop
+删除stash状态
+git stash drop
+
+检出远程仓库分支
+git checkout -b dev origin/dev
+
+获取远程仓库
+git pull <name> <branch>
+
+指定本地分支与远程分支的链接
+git branch --set-upstream-to=<name>/<branch> <branch>
